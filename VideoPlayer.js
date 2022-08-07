@@ -949,9 +949,7 @@ export default class VideoPlayer extends Component {
    * view and spaces them out.
    */
   renderTopControls() {
-    const backControl = this.props.disableBack
-      ? this.renderNullControl()
-      : this.renderBack();
+    const backControl = this.renderNullControl()
     const volumeControl = this.props.disableVolume
       ? this.renderNullControl()
       : this.renderVolume();
